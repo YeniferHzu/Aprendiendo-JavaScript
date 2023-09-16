@@ -1,0 +1,74 @@
+Clase del Día 2: Variables y Tipos de Datos en JavaScript.
+
+Objetivos:
+
+    Aprender cómo declarar variables en JavaScript.
+    Comprender los diferentes tipos de datos en JavaScript.
+
+Contenido:
+
+1. Declaración de Variables en JavaScript
+
+    En JavaScript, puedes usar tres palabras clave para declarar variables: var, let, y const.
+    var se usaba en versiones antiguas de JavaScript, pero en la actualidad, se prefiere let y const para declarar variables.
+    let se utiliza para declarar variables que pueden cambiar su valor.
+    const se utiliza para declarar variables cuyo valor no cambia una vez asignado.
+
+2. Tipos de Datos en JavaScript
+
+    JavaScript tiene varios tipos de datos, incluyendo:
+        Números (por ejemplo, 5, 3.14).
+        Cadenas de texto (por ejemplo, "Hola, Mundo").
+        Booleanos (por ejemplo, true o false).
+        Arreglos (por ejemplo, [1, 2, 3]).
+        Objetos (por ejemplo, {nombre: "Juan", edad: 30}).
+        Null y Undefined (representan la ausencia de valor).
+
+3. Ejemplos de Declaración de Variables:
+
+javascript
+
+// Declaración de variables con let (variables mutables)
+let nombre = "Juan";
+let edad = 25;
+
+// Declaración de constantes con const (variables inmutables)
+const PI = 3.1416;
+
+// Variables sin valor asignado inicialmente
+let precio;
+
+4. Ejemplos de Tipos de Datos:
+
+javascript
+
+let numero = 42;            // Número entero
+let precio = 99.99;         // Número decimal
+let mensaje = "Hola";      // Cadena de texto
+let esCierto = true;       // Booleano
+let colores = ["rojo", "verde", "azul"]; // Arreglo
+let persona = {nombre: "Ana", edad: 30}; // Objeto
+let vacio = null;           // Valor nulo
+let indefinido = undefined; // Valor indefinido
+
+5. Conversión de Tipos de Datos:
+
+    JavaScript puede convertir automáticamente tipos de datos en ciertas situaciones, pero también puedes realizar conversiones explícitas.
+
+javascript
+
+let numero = "42";      // Una cadena
+let numeroConvertido = parseInt(numero); // Convertir a número
+
+Ejercicio:
+
+    Declara una variable llamada fruta y asígnale el valor de tu fruta favorita.
+    Declara una variable llamada cantidad y asígnale un número que represente la cantidad de esa fruta que te gustaría comer.
+    Imprime un mensaje en la consola que combine estas dos variables para mostrar cuántas frutas te gustaría comer.
+
+Recuerda:
+
+    Las variables en JavaScript se utilizan para almacenar datos y pueden cambiar de valor a lo largo del tiempo.
+    Los tipos de datos en JavaScript son fundamentales para realizar operaciones específicas en tu código.
+
+¡Excelente! Has aprendido sobre la declaración de variables y los tipos de datos en JavaScript. En la próxima clase, exploraremos cómo utilizar operadores y expresiones en JavaScript. ¡Sigue practicando!

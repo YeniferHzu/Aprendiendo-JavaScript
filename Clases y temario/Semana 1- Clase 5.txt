@@ -1,0 +1,80 @@
+Clase del Día 5: Funciones en JavaScript:
+
+Objetivos:
+
+    Comprender qué son las funciones y cómo se utilizan en JavaScript.
+    Aprender a declarar y llamar a una función.
+
+Contenido:
+
+1. ¿Qué es una Función?
+
+    Una función es un bloque de código que realiza una tarea específica. Puede aceptar entradas (argumentos) y devolver un resultado.
+
+2. Declaración de Funciones
+
+    Puedes declarar una función usando la palabra clave function, seguida del nombre de la función y paréntesis ( ).
+
+javascript
+
+function nombreDeLaFuncion(argumento1, argumento2) {
+    // Código de la función
+}
+
+3. Llamada a Funciones
+
+    Para ejecutar o llamar a una función, simplemente escribe el nombre de la función seguido de paréntesis ( ).
+
+javascript
+
+nombreDeLaFuncion(valor1, valor2);
+
+4. Parámetros y Argumentos
+
+    Los parámetros son variables que se utilizan para recibir valores en una función.
+    Los argumentos son los valores reales que se pasan a la función cuando se llama.
+
+javascript
+
+function saludar(nombre) {
+    console.log("¡Hola, " + nombre + "!");
+}
+
+saludar("Juan"); // Llamada a la función con el argumento "Juan"
+
+5. Funciones sin Argumentos
+
+    Las funciones pueden no necesitar argumentos para realizar su tarea.
+
+javascript
+
+function saludar() {
+    console.log("¡Hola!");
+}
+
+saludar(); // Llamada a la función sin argumentos
+
+6. Funciones con Retorno
+
+    Una función puede devolver un valor utilizando la palabra clave return.
+
+javascript
+
+function suma(a, b) {
+    return a + b;
+}
+
+let resultado = suma(5, 3); // resultado = 8
+
+7. Ámbito de las Variables
+
+    Las variables declaradas dentro de una función solo son visibles dentro de esa función (a menos que se utilice return para devolverlas).
+
+Ejercicio:
+
+    Crea una función llamada calcularEdad que tome un año de nacimiento como argumento y devuelva la edad actual. Luego, imprime el resultado utilizando console.log().
+
+Recuerda:
+
+    Las funciones son bloques de código reutilizables que realizan una tarea específica.
+    Pueden aceptar argumentos y devolver un resultado.

@@ -1,0 +1,61 @@
+Día 1: Introducción a JavaScript
+
+Objetivos:
+
+    Comprender qué es JavaScript y por qué es importante.
+    Configurar un entorno de desarrollo básico.
+    Realizar los primeros pasos con JavaScript.
+
+Contenido:
+
+1. ¿Qué es JavaScript?
+
+    JavaScript es un lenguaje de programación ampliamente utilizado en el desarrollo web.
+    Se utiliza principalmente en el lado del cliente (navegador) para hacer que las páginas web sean interactivas.
+    JavaScript es esencial para crear efectos visuales, validar formularios, cargar datos de manera dinámica y más.
+
+2. Configuración del Entorno de Desarrollo
+
+    Para comenzar a programar en JavaScript, necesitas un entorno de desarrollo.
+    Descarga e instala un editor de código como Visual Studio Code.
+    Abre VS Code y crea una carpeta para tu proyecto.
+
+3. Primeros Pasos con JavaScript
+
+    Crea un archivo HTML llamado "index.html" en tu carpeta de proyecto.
+    Abre "index.html" con VS Code y agrega el siguiente código básico:
+
+html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Primera Página con JavaScript</title>
+</head>
+<body>
+    <h1>Mi Primer Script en JavaScript</h1>
+    <script>
+        // Aquí vamos a escribir nuestro código JavaScript
+        alert("¡Hola, Mundo!");
+    </script>
+</body>
+</html>
+
+    En este ejemplo, hemos creado una página HTML simple que contiene un título y una etiqueta de script.
+    El código JavaScript dentro de la etiqueta <script> muestra una ventana emergente con el mensaje "¡Hola, Mundo!" cuando se carga la página.
+
+4. Ejecutando tu Primer Programa
+
+    Abre "index.html" en tu navegador web (haz clic derecho en el archivo y selecciona "Abrir con...").
+    Deberías ver el título de la página y, después de un momento, una ventana emergente con el mensaje "¡Hola, Mundo!".
+
+Ejercicio:
+
+    Intenta cambiar el mensaje dentro de la función alert en el código JavaScript. Guarda los cambios y actualiza la página en tu navegador para ver la diferencia.
+
+Recuerda:
+
+    JavaScript se ejecuta en el navegador del cliente, lo que significa que puedes ver los resultados de tu código directamente en tu navegador.
+    Este es solo el primer paso, pero ¡ya has escrito tu primer programa en JavaScript!
+
+¡Felicidades por completar la primera clase de tu curso de JavaScript! Continúa practicando y explorando más sobre el lenguaje en las próximas clases.

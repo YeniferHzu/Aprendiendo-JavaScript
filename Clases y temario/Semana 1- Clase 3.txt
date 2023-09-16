@@ -1,0 +1,89 @@
+Clase del Día 3: Operadores y Expresiones en JavaScript:
+
+Objetivos:
+
+    Aprender sobre los operadores en JavaScript.
+    Comprender cómo funcionan las expresiones.
+
+Contenido:
+
+1. Operadores en JavaScript
+
+    Los operadores son símbolos que realizan operaciones en operandos. Los operandos pueden ser valores, variables o expresiones.
+    Ejemplos de operadores:
+        Aritméticos: + (suma), - (resta), * (multiplicación), / (división), % (módulo).
+        Asignación: = (asignación simple), +=, -=, *=, /=.
+        Comparación: == (igual a), != (no igual a), > (mayor que), < (menor que), >= (mayor o igual que), <= (menor o igual que).
+        Lógicos: && (y lógico), || (o lógico), ! (no lógico).
+        Incremento/Decremento: ++ (incremento), -- (decremento).
+
+2. Uso de Operadores Aritméticos
+
+    Ejemplos:
+
+javascript
+
+let suma = 5 + 3;       // suma = 8
+let resta = 10 - 4;     // resta = 6
+let multiplicacion = 4 * 3; // multiplicacion = 12
+let division = 20 / 5;  // division = 4
+let modulo = 11 % 3;    // modulo = 2
+
+3. Uso de Operadores de Asignación
+
+    Ejemplos:
+
+javascript
+
+let x = 5;
+x += 3; // Equivalente a x = x + 3
+
+4. Uso de Operadores de Comparación
+
+    Ejemplos:
+
+javascript
+
+let a = 5;
+let b = 8;
+
+let igual = a == b;     // igual = false
+let mayorQue = a > b;   // mayorQue = false
+let menorQue = a < b;   // menorQue = true
+let noIgual = a != b;   // noIgual = true
+
+5. Uso de Operadores Lógicos
+
+    Ejemplos:
+
+javascript
+
+let esVerdadero = true;
+let esFalso = false;
+
+let andLogico = esVerdadero && esFalso; // andLogico = false
+let orLogico = esVerdadero || esFalso;  // orLogico = true
+let noLogico = !esVerdadero;           // noLogico = false
+
+6. Precedencia de Operadores
+
+    Los operadores tienen una precedencia que determina el orden en que se ejecutan. Puedes usar paréntesis para controlar el orden de evaluación.
+
+7. Expresiones
+
+    Las expresiones son combinaciones de valores y operadores que se evalúan para producir un valor.
+    Ejemplo de expresión:
+
+javascript
+
+let resultado = (5 + 3) * 2; // resultado = 16
+
+Ejercicio:
+
+    Crea una expresión que calcule el área de un rectángulo utilizando variables para la base y la altura. Luego, muestra el resultado utilizando console.log().
+
+Recuerda:
+
+    Los operadores son fundamentales para realizar cálculos y comparaciones en JavaScript.
+    Las expresiones son combinaciones de valores y operadores que se evalúan para producir un resultado.
+    Puedes usar paréntesis para controlar el orden de evaluación de las expresiones.

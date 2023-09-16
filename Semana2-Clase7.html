@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 7</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 7</h1>
+        <p>Crea un objeto llamado libro que tenga propiedades como titulo, autor, y añoPublicacion. Luego, utiliza console.log() para imprimir la información del libro.</p>
+
+    <script>
+        //Creando el objeto llamado libro
+        let libro={
+            titulo: "100 años de soledad",
+            autor: "Gabriel Garcia Marquez",
+            añoPublicacion: 1950
+        };
+            //Para imprimir en consola
+            for (let info in libro){ //Crea "info" para poder mostrar la información adecuadamente
+                console.log(info+" : "+libro[info]);//Muestra la información en pantalla
+            }
+    </script>
+
+</body>
+</html>

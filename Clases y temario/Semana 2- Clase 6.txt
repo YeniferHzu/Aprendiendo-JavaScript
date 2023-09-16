@@ -1,0 +1,65 @@
+Clase del Día 6: Arreglos y Bucles en JavaScript:
+
+Objetivos:
+
+    Comprender qué son los arreglos y cómo se utilizan en JavaScript.
+    Aprender a utilizar bucles para trabajar con arreglos.
+
+Contenido:
+
+1. Arreglos en JavaScript
+
+    Un arreglo es una estructura de datos que permite almacenar una colección de elementos bajo un solo nombre.
+
+javascript
+
+let nombres = ['Juan', 'María', 'Carlos', 'Laura'];
+
+2. Acceso a Elementos de un Arreglo
+
+    Puedes acceder a los elementos de un arreglo utilizando su índice (posición).
+
+javascript
+
+let primerNombre = nombres[0]; // Accede al primer elemento (índice 0)
+let segundoNombre = nombres[1]; // Accede al segundo elemento (índice 1)
+
+3. Modificación de Elementos
+
+    Puedes modificar un elemento del arreglo asignándole un nuevo valor.
+
+javascript
+
+nombres[2] = 'Pedro'; // Cambia el tercer elemento a 'Pedro'
+
+4. Longitud de un Arreglo
+
+    Puedes obtener la cantidad de elementos en un arreglo utilizando la propiedad length.
+
+javascript
+
+let cantidadNombres = nombres.length; // cantidadNombres = 4
+
+5. Iterando sobre un Arreglo con un Bucle
+
+    Puedes usar un bucle para recorrer todos los elementos de un arreglo.
+
+javascript
+
+for (let i = 0; i < nombres.length; i++) {
+    console.log(nombres[i]);
+}
+
+6. Métodos de Arreglos
+
+    JavaScript proporciona una variedad de métodos incorporados para trabajar con arreglos, como push, pop, shift, unshift, splice, entre otros.
+
+Ejercicio:
+
+    Crea un arreglo de números y utiliza un bucle para calcular la suma de todos los elementos.
+
+Recuerda:
+
+    Los arreglos permiten almacenar una colección de elementos bajo un solo nombre.
+    Puedes acceder a los elementos de un arreglo mediante índices.
+    Los bucles son útiles para recorrer y realizar operaciones en los elementos de un arreglo.

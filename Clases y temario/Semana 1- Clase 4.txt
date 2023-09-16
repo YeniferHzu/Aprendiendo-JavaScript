@@ -1,0 +1,145 @@
+Clase del Día 4: Estructuras de Control en JavaScript:
+
+Objetivos:
+
+    Comprender cómo se utilizan las estructuras de control para tomar decisiones en JavaScript.
+    Aprender a usar bucles para repetir acciones.
+
+Contenido:
+
+1. Condicionales (if-else)
+
+    Los condicionales permiten ejecutar diferentes bloques de código dependiendo de si una condición es verdadera o falsa.
+    Sintaxis:
+
+javascript
+
+if (condicion) {
+    // Código si la condición es verdadera
+} else {
+    // Código si la condición es falsa
+}
+
+    Ejemplo:
+
+javascript
+
+let edad = 18;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+
+2. Bucles (for y while)
+
+    Los bucles permiten repetir un bloque de código varias veces.
+    Sintaxis de bucle for:
+
+javascript
+
+for (inicialización; condición; incremento/decremento) {
+    // Código a repetir
+}
+
+    Ejemplo:
+
+javascript
+
+for (let i = 0; i < 5; i++) {
+    console.log("Iteración " + i);
+}
+
+    Sintaxis de bucle while:
+
+javascript
+
+while (condición) {
+    // Código a repetir
+}
+
+    Ejemplo:
+
+javascript
+
+let contador = 0;
+
+while (contador < 3) {
+    console.log("Iteración " + contador);
+    contador++;
+}
+
+3. Bucles (do-while)
+
+    El bucle do-while es similar al while, pero garantiza que el código se ejecute al menos una vez antes de verificar la condición.
+
+javascript
+
+do {
+    // Código a repetir
+} while (condición);
+
+    Ejemplo:
+
+javascript
+
+let x = 0;
+
+do {
+    console.log("Iteración " + x);
+    x++;
+} while (x < 3);
+
+4. Uso de Operadores Lógicos con Condicionales
+
+    Los operadores lógicos (&&, ||, !) pueden combinarse con condicionales para crear expresiones más complejas.
+
+Ejercicio:
+
+    Crea un programa que imprima los números pares del 1 al 10 utilizando un bucle.
+
+Recuerda:
+
+    Las estructuras de control son fundamentales para tomar decisiones y repetir acciones en un programa.
+    Los bucles permiten automatizar tareas repetitivas.
+
+EXPLICACIÓN DEL EJERCICIO 
+El ejercicio consiste en imprimir los números pares del 1 al 10 utilizando un bucle y una condición. Vamos a desglosar el código paso a paso:
+
+javascript
+
+for (let i = 1; i <= 10; i++) {
+
+    for: Esto es una estructura de control de flujo que permite ejecutar un bloque de código repetidamente. En este caso, estamos usando un bucle for.
+
+    let i = 1: Aquí estamos inicializando una variable llamada i y le estamos dando el valor inicial de 1. Esta variable será el contador del bucle.
+
+    i <= 10: Esta es la condición que verifica si el bucle debe continuar o no. Mientras i sea menor o igual a 10, el bucle continuará ejecutándose.
+
+    i++: Después de cada iteración del bucle, incrementamos el valor de i en 1. Esto se hace con i++, que es una forma abreviada de escribir i = i + 1.
+
+javascript
+
+    if (i % 2 === 0) {
+
+    i % 2: El operador % se llama operador de módulo. Devuelve el residuo de la división entre dos números. Por lo tanto, i % 2 nos dará el resto de dividir i entre 2.
+
+    ===: Este es el operador de igualdad estricta. Compara si dos valores son iguales tanto en valor como en tipo.
+
+    0: Aquí estamos comparando si el residuo de i dividido por 2 es igual a 0. Si es así, eso significa que i es un número par.
+
+javascript
+
+        console.log(i);
+
+    Si el número i es par (es decir, i % 2 === 0 es verdadero), entonces ejecutamos este bloque de código que imprime el valor de i en la consola.
+
+Entonces, el bucle comienza en 1, verifica si es par, y si lo es, lo imprime en la consola. Luego, se incrementa a 2, y así sucesivamente hasta llegar a 10.
+
+Espero que esta explicación detallada te ayude a comprender cada parte del código. Si hay algo más que quieras saber o si tienes alguna pregunta adicional, no dudes en decírmelo. Estoy aquí para ayudarte.
+
+EJERCICIO PROPUESTO
+Escribe un programa que imprima los números impares del 1 al 20 utilizando un bucle for y una condición if.
+
+Recuerda utilizar un bucle for para iterar del 1 al 20 y una condición if para verificar si el número es impar.

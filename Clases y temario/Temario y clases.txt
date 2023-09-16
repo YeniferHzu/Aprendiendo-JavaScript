@@ -1,0 +1,101 @@
+Objetivo general del curso: Aprender los conceptos fundamentales de JavaScript y desarrollar habilidades para crear aplicaciones web básicas.
+
+Requisitos previos: No es necesario tener experiencia previa en programación, pero tener un conocimiento básico de HTML y CSS sería útil.
+
+Recursos necesarios: Un editor de texto como Visual Studio Code, acceso a un navegador web y una conexión a internet.
+Semana 1:
+
+Día 1: Introducción a JavaScript
+
+    Qué es JavaScript y su importancia.
+    Dónde se utiliza JavaScript (navegadores, backend, etc.).
+    El ambiente de desarrollo (configuración de VS Code).
+    Primeros pasos con JavaScript (uso de alert, console.log).
+
+Día 2: Variables y Tipos de Datos
+
+    Declaración de variables (var, let, const).
+    Tipos de datos en JavaScript (números, cadenas, booleanos, arrays, objetos).
+    Conversiones entre tipos de datos.
+
+Día 3: Operadores y Expresiones
+
+    Operadores aritméticos, de asignación, comparación y lógicos.
+    Precedencia de operadores.
+    Uso de expresiones y cómo evaluarlas.
+
+Día 4: Estructuras de Control
+
+    Uso de condicionales (if, else if, else).
+    Operador ternario.
+    Bucles (for, while) y control de flujo.
+
+Día 5: Funciones
+
+    Declaración y llamada de funciones.
+    Parámetros y argumentos.
+    Retorno de valores.
+
+Semana 2:
+
+Día 6: Arreglos (Arrays)
+
+    Creación y manipulación de arreglos.
+    Métodos útiles de arreglos (push, pop, shift, unshift, etc.).
+    Iteración en arreglos (for...of, forEach).
+
+Día 7: Objetos
+
+    Introducción a objetos y propiedades.
+    Creación y manipulación de objetos.
+    Objetos anidados y acceso a propiedades.
+
+Día 8: Funciones Avanzadas
+
+    Funciones de flecha (arrow functions).
+    Funciones como argumentos (callbacks).
+    Cierres (closures) y alcance de variables.
+
+Día 9: DOM (Document Object Model)
+
+    Introducción al DOM y su importancia en la web.
+    Acceso y manipulación de elementos del DOM.
+    Eventos y manejo de interacción del usuario.
+
+Día 10: Eventos
+
+    Eventos comunes (click, submit, keypress, etc.).
+    EventListeners y su uso.
+    Prevención de comportamientos por defecto.
+
+Semana 3:
+
+Día 11: Programación Orientada a Objetos (POO)
+
+    Conceptos básicos de POO.
+    Creación de clases y objetos en JavaScript.
+    Herencia y prototipos.
+
+Día 12: AJAX y APIs
+
+    Introducción a AJAX y su importancia en las aplicaciones web.
+    Uso de APIs públicas para obtener datos (por ejemplo, JSONPlaceholder).
+    Realización de peticiones con fetch.
+
+Día 13: Manipulación del DOM Avanzada
+
+    Creación y eliminación de elementos dinámicamente.
+    Animaciones básicas con JavaScript y CSS.
+
+Día 14: Introducción a ES6+
+
+    Repaso de características clave de ECMAScript 6 y posteriores.
+    Let y const.
+    Funciones de flecha, clases, import/export.
+
+Día 15: Proyecto Final
+
+    Desarrollo de un pequeño proyecto web utilizando todo lo aprendido.
+    Reforzamiento de conceptos y buenas prácticas.
+
+Este curso es una base sólida para empezar con JavaScript, pero recuerda que la programación es un aprendizaje constante. Después de completar este curso, te animo a seguir explorando proyectos más complejos y aprender nuevas bibliotecas o marcos de trabajo como React, Angular o Vue.js, según tus intereses.

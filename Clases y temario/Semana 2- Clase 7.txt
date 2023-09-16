@@ -1,0 +1,79 @@
+Clase del Día 7: Objetos en JavaScript:
+
+Objetivos:
+
+    Comprender qué son los objetos y cómo se utilizan en JavaScript.
+    Aprender a crear y trabajar con objetos para almacenar y manipular datos.
+
+Contenido:
+
+1. ¿Qué es un Objeto en JavaScript?
+
+    Un objeto es una estructura de datos que permite almacenar múltiples valores relacionados en un solo lugar. Estos valores se almacenan en pares clave-valor.
+
+javascript
+
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    ciudad: "Madrid"
+};
+
+2. Acceso a Propiedades de un Objeto
+
+    Puedes acceder a las propiedades de un objeto utilizando la notación de punto (objeto.propiedad) o la notación de corchetes (objeto['propiedad']).
+
+javascript
+
+console.log(persona.nombre); // Acceso usando notación de punto
+console.log(persona['edad']);  // Acceso usando notación de corchetes
+
+3. Modificación de Propiedades
+
+    Puedes modificar el valor de una propiedad de objeto simplemente asignando un nuevo valor.
+
+javascript
+
+persona.edad = 31; // Cambio de la edad a 31
+
+4. Añadir Nuevas Propiedades
+
+    Puedes agregar nuevas propiedades a un objeto en cualquier momento.
+
+javascript
+
+persona.profesion = "Ingeniero"; // Agrega la propiedad 'profesion'
+
+5. Bucles y Objetos
+
+    Puedes utilizar bucles para recorrer todas las propiedades de un objeto.
+
+javascript
+
+for (let clave in persona) {
+    console.log(clave + ": " + persona[clave]);
+}
+
+6. Métodos en Objetos
+
+    Los objetos también pueden contener funciones llamadas métodos.
+
+javascript
+
+let coche = {
+    marca: "Toyota",
+    modelo: "Camry",
+    arrancar: function() {
+        console.log("El coche está arrancando.");
+    }
+};
+
+Ejercicio:
+
+    Crea un objeto llamado libro que tenga propiedades como titulo, autor, y añoPublicacion. Luego, utiliza console.log() para imprimir la información del libro.
+
+Recuerda:
+
+    Los objetos permiten almacenar datos relacionados en pares clave-valor.
+    Puedes acceder, modificar y agregar propiedades en objetos.
+    Los objetos pueden contener funciones llamadas métodos.
