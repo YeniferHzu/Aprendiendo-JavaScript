@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 9</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 9</h1>
+        <p>Crea una página web con un botón. Al hacer clic en el botón, cambia el color de fondo de la página.</p>
+
+            <!--Creando el botón-->
+            <button id="miBoton">Mi botón</button>
+
+    <script>
+        //Accediendo al botón
+        let boton=document.getElementById('miBoton');
+            
+            //Cambiando el color
+            boton.addEventListener('click', function(){
+                document.body.style.background='lightblue';
+            });
+    </script>
+
+<!--
+    -- >añade boton.addEventListener y la función
+    -- >accede al 'doment' concatenalo con el 'body' 
+        concatena el 'style' concatena el 'backfround' 
+        y declara el color del fondo
+-->
+</body>
+</html>

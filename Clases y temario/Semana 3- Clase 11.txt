@@ -1,0 +1,103 @@
+Clase 11: Programación Orientada a Objetos (POO).
+
+Objetivo:
+
+    Comprender los conceptos básicos de la programación orientada a objetos (POO) y cómo se aplican en JavaScript.
+
+Contenido:
+
+Conceptos Básicos de POO:
+
+    Explicación sobre qué es la programación orientada a objetos y cómo se diferencia de otros paradigmas de programación.
+
+Creación de Clases y Objetos en JavaScript:
+
+    En JavaScript, las "clases" son funciones constructoras que pueden ser utilizadas para crear múltiples instancias u objetos. Se pueden crear propiedades y métodos para estas clases.
+
+javascript
+
+// Definiendo una clase en JavaScript
+function Persona(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+}
+
+// Creando una instancia de la clase Persona
+let persona1 = new Persona('Juan', 30);
+
+La programación orientada a objetos es un paradigma de programación que se basa en la idea de "objetos", que pueden tener propiedades (características) y métodos (acciones) asociados. Los objetos son instancias de clases.
+
+En JavaScript, las "clases" son funciones constructoras que se utilizan como plantillas para crear objetos. Por ejemplo:
+
+javascript
+
+function Persona(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+}
+
+let persona1 = new Persona('Juan', 30);
+let persona2 = new Persona('María', 25);
+
+En este ejemplo, Persona es una clase que tiene dos propiedades: nombre y edad. persona1 y persona2 son dos instancias u objetos de la clase Persona.
+
+Herencia y Prototipos:
+
+    En POO, la herencia permite a una clase heredar propiedades y métodos de otra clase. En JavaScript, esto se logra a través del mecanismo de "prototipos".
+
+javascript
+
+// Definiendo una clase base
+function Animal(nombre) {
+    this.nombre = nombre;
+}
+
+// Agregando un método a la clase base a través del prototipo
+Animal.prototype.saludar = function() {
+    console.log('Hola, soy ' + this.nombre);
+}
+
+// Definiendo una subclase que hereda de Animal
+function Perro(nombre, raza) {
+    Animal.call(this, nombre);
+    this.raza = raza;
+}
+
+// Estableciendo la herencia mediante prototipos
+Perro.prototype = Object.create(Animal.prototype);
+
+// Agregando un método específico para Perro
+Perro.prototype.ladrar = function() {
+    console.log('¡Guau!');
+}
+
+let miPerro = new Perro('Max', 'Labrador');
+
+La herencia en POO permite a una clase heredar propiedades y métodos de otra clase. En JavaScript, esto se hace a través del mecanismo de "prototipos".
+
+Por ejemplo, si queremos crear una clase Empleado que hereda de la clase Persona, podemos hacer lo siguiente:
+
+javascript
+
+function Empleado(nombre, edad, cargo) {
+    Persona.call(this, nombre, edad);
+    this.cargo = cargo;
+}
+
+Empleado.prototype = Object.create(Persona.prototype);
+
+Empleado.prototype.trabajar = function() {
+    console.log(this.nombre + ' está trabajando como ' + this.cargo);
+}
+
+let empleado1 = new Empleado('Ana', 35, 'Desarrollador');
+
+En este ejemplo, Empleado es una subclase de Persona. Usamos Persona.call(this, nombre, edad); para asegurarnos de que la clase Persona también se inicialice correctamente cuando creamos una instancia de Empleado.
+
+Luego, establecemos la herencia de Persona.prototype a Empleado.prototype para que Empleado herede los métodos de Persona.
+
+Finalmente, agregamos un método específico para Empleado llamado trabajar.
+
+Ejercicio:
+
+    Diseña una aplicación que simule un sistema de manejo de cuentas bancarias. Cada cuenta debe tener un saldo y permitir depósitos y retiros.

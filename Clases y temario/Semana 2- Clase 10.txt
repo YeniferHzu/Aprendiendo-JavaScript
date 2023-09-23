@@ -1,0 +1,38 @@
+Clase 10: Eventos.
+
+Objetivo:
+
+    Comprender cómo funcionan los eventos en JavaScript y cómo se pueden utilizar para interactuar con una página web.
+
+Contenido:
+
+Eventos Comunes:
+
+    Los eventos son acciones que ocurren en una página web, como hacer clic en un botón, enviar un formulario, presionar una tecla, etc. Algunos eventos comunes incluyen click, submit, keypress, mouseover, mouseout, entre otros.
+
+EventListeners y su Uso:
+
+    Los EventListeners son funciones que se ejecutan en respuesta a un evento específico en un elemento HTML. Se pueden agregar a un elemento para "escuchar" eventos y realizar acciones cuando ocurren.
+
+javascript
+
+let miBoton = document.getElementById('miBoton');
+miBoton.addEventListener('click', function() {
+    alert('¡Has hecho clic en el botón!');
+});
+
+Prevención de Comportamientos por Defecto:
+
+    Algunos eventos, como el envío de un formulario, tienen un comportamiento predeterminado que puede ser prevenido para personalizar la acción que ocurre.
+
+javascript
+
+let miFormulario = document.getElementById('miFormulario');
+miFormulario.addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el comportamiento por defecto
+    alert('Formulario enviado!');
+});
+
+Ejercicio:
+
+    Diseña una página web con un formulario. Agrega un EventListener al formulario que muestre un mensaje de alerta cuando se envíe.

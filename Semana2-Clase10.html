@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 10</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 10</h1>
+        <p>Diseña una página web con un formulario. Agrega un EventListener al formulario que muestre un mensaje de alerta cuando se envíe.</p>
+
+        <!--Creando el formulario-->
+        <div>
+            <form id="miFormulario" method="post" action="Semana2-Clase10.html">
+                <label>Nombre</label>
+                <br>
+		        <input type="text" name="Nombre">
+                    <br><br>
+                <label>Apellido</label>
+                <br>
+                <input type="text" name="Apellido">
+                <br><br>
+                <label>Edad</label>
+                    <br>
+                <input type="number" name="Edad">
+                    <br><br>
+                <input type="submit" value="Registrar" name="Registrar"/>
+            </form>
+        </div>
+
+    <script>
+        console.log('Script ejecutado');
+        //Creando el mensaje de alerta al envíar formulario
+        let miFormulario=document.getElementById('miFormulario');       //declara el "id" usado en el formulario y accede a él
+            miFormulario.addEventListener('submit',function(event){     //declara el evento como 'submit' y la función
+                event.preventDefault();                                 //previene el comportamiento por defecto
+                    alert('¡Formulario enviado exitosamente!');         //envía la alerta
+            });
+        
+    </script>
+
+</body>
+</html>

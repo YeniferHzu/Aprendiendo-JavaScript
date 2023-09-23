@@ -1,0 +1,42 @@
+Clase 9: DOM (Document Object Model).
+
+Objetivo:
+
+    Comprender qué es el DOM y cómo se utiliza para interactuar con elementos HTML en una página web.
+
+Contenido:
+
+Introducción al DOM:
+
+    El DOM (Document Object Model) representa la estructura de un documento HTML como una jerarquía de objetos. Cada elemento HTML es un objeto en el DOM, y puede ser manipulado a través de JavaScript.
+
+Acceso y Manipulación de Elementos del DOM:
+
+    JavaScript proporciona métodos para acceder y manipular elementos del DOM. Los métodos comunes incluyen getElementById, querySelector, getElementsByTagName, setAttribute, innerHTML, entre otros.
+
+javascript
+
+let miElemento = document.getElementById('miElemento');
+miElemento.innerHTML = 'Nuevo contenido';
+miElemento.style.color = 'blue';
+
+Eventos y Manejo de Interacción del Usuario:
+
+    Los eventos son acciones que ocurren en la página web, como hacer clic en un botón o mover el mouse. JavaScript permite asignar funciones a eventos, lo que permite responder a las interacciones del usuario.
+
+javascript
+
+let miBoton = document.getElementById('miBoton');
+miBoton.addEventListener('click', function() {
+    alert('¡Has hecho clic en el botón!');
+});
+
+Ejercicio:
+
+    Crea una página web con un botón. Al hacer clic en el botón, cambia el color de fondo de la página.
+
+Recuerda:
+
+    El DOM es una representación de la estructura de un documento HTML.
+    Los elementos HTML son objetos en el DOM y pueden ser manipulados con JavaScript.
+    Los eventos permiten responder a las interacciones del usuario.

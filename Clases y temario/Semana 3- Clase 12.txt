@@ -1,0 +1,62 @@
+Clase 12: AJAX y APIs
+
+En esta clase, aprenderemos sobre AJAX (Asynchronous JavaScript and XML) y cómo utilizarlo para interactuar con APIs (Application Programming Interfaces).
+
+Conceptos clave:
+
+    ¿Qué es AJAX?
+        AJAX es una técnica de programación que permite actualizar partes de una página web sin necesidad de recargarla por completo. Esto se logra mediante peticiones asíncronas al servidor.
+
+    ¿Qué es una API?
+        Una API es un conjunto de reglas y protocolos que permite a diferentes aplicaciones comunicarse entre sí. En el contexto de la web, una API generalmente se refiere a un conjunto de endpoints de un servidor que proporciona datos o funcionalidades a otras aplicaciones.
+
+    Usando fetch para realizar peticiones HTTP
+        fetch es una función incorporada en JavaScript que nos permite hacer peticiones HTTP y trabajar con las respuestas. Puede manejar tanto solicitudes GET como POST y admite Promesas.
+
+    Obteniendo datos de una API
+        Podemos utilizar fetch para obtener datos de una API pública o de nuestro propio servidor. Esto es útil para obtener información en tiempo real o para integrar servicios de terceros en nuestras aplicaciones.
+
+Para obtener datos de una API y mostrarlos
+    Identificar una API: Puedes utilizar una API pública como JSONPlaceholder (https://jsonplaceholder.typicode.com/), que simula una API RESTful para pruebas.
+
+    Realizar una petición con fetch: Usaremos JavaScript para hacer una petición a la API. Esto se hace con la función fetch.
+
+    Procesar la respuesta: Una vez que se obtiene la respuesta de la API, generalmente en formato JSON, se debe procesar para extraer los datos que necesitas.
+
+    Mostrar los datos en la página: Utiliza JavaScript para manipular el DOM y mostrar la información obtenida en el paso anterior.
+
+    Manejar errores y casos no exitosos: Asegúrate de manejar casos donde la petición a la API falle por algún motivo.
+
+Ejemplo de Pseudocódigo
+// 1. Realizar la petición a la API
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json()) // 2. Procesar la respuesta en formato JSON
+    .then(data => {
+        // 3. Mostrar los datos en la página
+        const resultsContainer = document.getElementById('results-container');
+        data.forEach(post => {
+            const postElement = document.createElement('div');
+            postElement.innerText = `Título: ${post.title}`;
+            resultsContainer.appendChild(postElement);
+        });
+    })
+    .catch(error => {
+        // 4. Manejar errores
+        console.error('Error:', error);
+    });
+
+Ejercicio sugerido: Obtener Información de Usuarios
+
+Descripción:
+Crea una página web que obtenga información de usuarios desde la API pública https://jsonplaceholder.typicode.com/users. Mostrarás el nombre, correo electrónico y la compañía a la que pertenecen. Utiliza AJAX para hacer la solicitud a la API y luego muestra los datos en la página.
+
+Pasos a seguir:
+
+    Utiliza fetch para obtener los datos de la API.
+    Procesa la respuesta para obtener los nombres, correos electrónicos y compañías de los usuarios.
+    Utiliza JavaScript para mostrar esta información en la página web.
+
+Consejos:
+
+    Puedes utilizar document.createElement para crear elementos HTML y luego adjuntarlos al DOM.
+    Recuerda manejar los errores posibles que puedan ocurrir durante la solicitud a la API.

@@ -1,0 +1,78 @@
+Clase del Día 8: Métodos de Objetos y Funciones Avanzadas en JavaScript:
+
+Objetivos:
+
+    Comprender cómo funcionan los métodos en los objetos y cómo crearlos.
+    Aprender sobre funciones avanzadas como las funciones flecha y los métodos de arreglo.
+
+Contenido:
+
+1. Métodos de Objetos
+
+    Los métodos son funciones que están asociadas a un objeto y pueden realizar acciones en ese objeto.
+
+javascript
+
+let persona = {
+    nombre: "Juan",
+    saludar: function() {
+        console.log("Hola, soy " + this.nombre);
+    }
+};
+
+persona.saludar(); // Esto imprimirá "Hola, soy Juan"
+
+2. Funciones Flecha
+
+    Las funciones flecha son una forma más concisa de escribir funciones en JavaScript.
+
+javascript
+
+let sumar = (a, b) => a + b;
+
+3. Métodos de Arreglos
+
+    JavaScript proporciona una variedad de métodos incorporados para trabajar con arreglos, como push, pop, shift, unshift, splice, map, filter, entre otros.
+
+javascript
+
+let numeros = [1, 2, 3, 4, 5];
+let dobles = numeros.map(numero => numero * 2);
+
+4. Funciones de Orden Superior
+
+    En JavaScript, las funciones son ciudadanos de primera clase, lo que significa que pueden ser pasadas como argumentos a otras funciones o incluso devueltas como valores de otras funciones.
+
+javascript
+
+function ejecutarOperacion(operacion, a, b) {
+    return operacion(a, b);
+}
+
+let resultado = ejecutarOperacion(sumar, 3, 4); // resultado = 7
+
+5. Funciones Recursivas
+
+    Una función recursiva es una función que se llama a sí misma.
+
+javascript
+
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+let resultado = factorial(5); // resultado = 120
+
+Ejercicio:
+
+    Crea una función que calcule el factorial de un número usando una función recursiva.
+
+Recuerda:
+
+    Los métodos son funciones asociadas a un objeto.
+    Las funciones flecha son una forma concisa de escribir funciones.
+    Los métodos de arreglos son funciones incorporadas para trabajar con arreglos.
+    Las funciones pueden ser pasadas como argumentos y devueltas como valores.

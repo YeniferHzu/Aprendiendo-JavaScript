@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 8</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 8</h1>
+        <p>Crea una función que calcule el factorial de un número usando una función recursiva.</p>
+
+    <script>
+        //Calculando el factorial
+
+            //Desarrollando el factorial
+            function factorial(n) { //declara el factotiral
+                if (n===0){
+                    return 1; //Si el factorial es 0 va a devolver 1
+                }
+                return n*factorial(n-1); //en otro caso, múltiplica el factorial hasta llegar a 1
+            }
+
+        let resultado = factorial(3); //declara el resultado y declara el valor del factorial
+            
+            //imprime el resultado en consola
+            console.log("El resultado del factorial es "+resultado);
+        
+    </script>
+
+</body>
+</html>

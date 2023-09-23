@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 11- Propuesto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 11</h1>
+    <h2>Ejercicio propuesto</h2>
+        <p>
+            Crea un sistema simple para registrar usuarios. Deberás seguir estos pasos:
+
+            <br><br>Define una clase llamada Usuario que tenga las siguientes propiedades:
+            <br>nombre: String
+            <br>apellido: String
+            <br>email: String
+            <br>password: String
+
+            <br><br>Agrega un método a la clase Usuario llamado mostrarInformacion que imprima en la consola la información del usuario en el siguiente formato:
+            <br>Nombre: [nombre]
+            <br>Apellido: [apellido]
+            <br>[email]
+
+            <br><br>Crea dos instancias de la clase Usuario con datos ficticios y utiliza el método mostrarInformacion para imprimir la información de ambos usuarios.
+
+            <br><br>Agrega un método adicional a la clase Usuario llamado cambiarPassword que permita cambiar la contraseña del usuario.
+
+            <br><br>Llama al método cambiarPassword en una de las instancias de usuario para cambiar su contraseña y luego muestra la información actualizada usando mostrarInformacion.
+        </p>
+
+    <script>
+        //Creando la clase Usuario
+        function Usuario(nombre,apellido,email,password){
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.email = email;
+            this.password = password;
+        }
+
+            //Agregando el método mostrarInformación
+            Usuario.prototype.mostrarInformacion=function(datos){
+                console.log("Los datos del usuario son: Nombre "+this.nombre+" Apellido: "+this.apellido+" Email: "+this.email+" Password: "+this.password);
+            }
+
+                //Agregando un método adicional llamado cambiarPassword
+                Usuario.prototype.cambiarPassword=function(passwordActual,nuevaPassword){
+                    if(passwordActual === this.password){
+                        this.password = nuevaPassword;
+                        console.log("¡Password cambiada correctamente!");
+                    }else{
+                        console.log("Password actual incorrecta. No se ha cambiado la password");
+                    }
+                }
+
+                    //Creando instancias para mostrar información
+                    let usuario1 = new Usuario('Yenifer','Hernandez','yenifer@gmail.com','contraseña1');
+                    let usuario2 = new Usuario('Yen','Uribe','yen@gmail.com','contraseña2');            
+
+                        //Mostrando la información
+                        usuario1.mostrarInformacion();
+                        usuario2.mostrarInformacion();
+
+    </script>
+
+</body>
+</html>

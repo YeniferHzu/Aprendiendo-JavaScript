@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 11</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 11</h1>
+        <p>Diseña una aplicación que simule un sistema de manejo de cuentas bancarias. Cada cuenta debe tener un saldo y permitir depósitos y retiros.</p>
+
+    <script>
+    //Sistena de manejo de cuentas bancarias con saldo, depósitos y retiros
+
+        //Declarando la Clase de Cuenta
+        function Cuenta(){
+            this.saldo=0;       //Declara e inicializa saldo en cero
+        }
+
+            //Métodos para el depósito y retiro
+            Cuenta.prototype.deposito=function(monto){      //Usa el prototipo para agreagr deposito y retiro
+                this.saldo+=monto;      //Suma el el parámetro monto al saldo actual
+            }
+
+            Cuenta.prototype.retiro=function(monto){    //Toma el parámetro monto
+                if(monto<=this.saldo){      //Verifica si el monto es menor o igual al saldo actual
+                    this.saldo-=monto;      //Resta el monto al saldo
+                }else{                      //En otro caso
+                    console.log("Saldo insuficiente");      //Imprime un mensaje que diga "saldo insuficiente"
+                }
+            }
+                //Creando instancias bancarias
+                let cuenta1 = new Cuenta();     //Crea dos objetos que representan la clase Cuenta 
+                let cuenta2 = new Cuenta();
+
+                    //realizando depósitos y retiros
+                    cuenta1.deposito(1500);     //Usa métodos para depositar y retirar en las cuentas
+                    cuenta1.retiro(500);
+
+                    cuenta2.deposito(2500);
+                    cuenta2.retiro(3500);
+
+                        //Verificando el saldo
+                        Cuenta.prototype.consultandoSaldo = function(){     //usa un prototipo para consultar el saldo
+                            return this.saldo;      //devuelve el saldo actual de la cuenta
+                        }
+
+                            //Imprimiendo el saldo de las cuentas
+                            console.log("El saldo de la cuenta 1 es: ",cuenta1.consultandoSaldo());
+                            console.log("El saldo de la cuenta 2 es: ",cuenta2.consultandoSaldo());
+        
+    </script>
+
+</body>
+</html>

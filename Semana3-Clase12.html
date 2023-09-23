@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 12</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+<body>
+    
+    <h1>Clase 12</h1>
+        <p>Ejercicio sugerido: Obtener Información de Usuarios
+
+            <br><br>Descripción:
+            <br>Crea una página web que obtenga información de usuarios desde la API pública https://jsonplaceholder.typicode.com/users. Mostrarás el nombre, correo electrónico y la compañía a la que pertenecen. Utiliza AJAX para hacer la solicitud a la API y luego muestra los datos en la página.
+            
+            <br><br>Pasos a seguir:
+            
+            <br>1. Utiliza fetch para obtener los datos de la API.
+            <br>2. Procesa la respuesta para obtener los nombres, correos electrónicos y compañías de los usuarios.
+            <br>3. Utiliza JavaScript para mostrar esta información en la página web.
+            </p>
+
+        <div id="results-container"></div>
+
+    <script>
+        //Realizando la petición a la API
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())//Recibe respuesta en formato JSON
+        .then(data=>{
+
+            //Mostrando los datos en la página
+            const resultsContainer = document.getElementById('results-container');
+            data.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.innerText = `Nombre: ${post.name} , Email: ${post.email}, Compañía: ${post.company.name}`; //Usa signo de acento grave (`) Alt+96 = `
+                resultsContainer.appendChild(postElement);
+            });
+        })
+                //Manejando los errores
+                .catch(error=>{
+                    console.error('Error: ',error);
+                });
+    </script>
+
+</body>
+</html>
