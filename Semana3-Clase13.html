@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clase 13</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+    <style>
+        #contenedor{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            size: 15px;
+            color: lightseagreen;
+            transition: width 1s ease-in-out;
+        }
+        #contenedor:hover{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Clase 13</h1>
+        <p>Desafío
+
+            <br>Crea un botón que, al hacer clic, agregue un nuevo elemento a la página con un texto y un estilo particular. Luego, al hacer clic en otro botón, elimina ese elemento.
+            <br><br>Pistas
+            
+            <br>Utiliza las funciones createElement, appendChild y remove para manipular el DOM.
+            <br>Aplica estilos CSS a través de las propiedades del elemento (element.style.property).
+            </p>
+
+            <button id="mostrar" onclick="mostrar()">Mostrar</button>
+                <br><br>
+                <div id="contenedor"></div>
+                <br><br>
+            <button id="ocultar" onclick="ocultar()">Ocultar</button>
+
+
+    <script>
+       //Creando la función para mostrar el elemento
+       function mostrar(){
+        const mostrar = document.createElement('div');
+            //Asigna el mensaje al elemento
+            mostrar.textContent='¡Te doy la bienvenida a la clase 13!';
+                mostrar.id='texto';    
+                    //Añade el elemento al DOM
+                    document.getElementById('contenedor').appendChild(mostrar);
+       }
+       
+       //Creando la función para ocultar el elemento
+       function ocultar(){
+           const elemento = document.getElementById('texto');
+            if(elemento){
+                elemento.remove(); //Solo intenta eliminar si el elemento existe
+            }
+        }
+    </script>
+
+</body>
+</html>

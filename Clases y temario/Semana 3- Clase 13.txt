@@ -1,0 +1,95 @@
+Día 13: Manipulación del DOM Avanzada
+1. Creación y Eliminación de Elementos Dinámicamente
+1.1 Creación de Elementos
+
+En JavaScript, podemos crear y añadir elementos al DOM de forma dinámica. Esto es útil cuando queremos agregar contenido o interactuar con la página sin necesidad de recargarla.
+
+javascript
+
+// Crear un nuevo elemento
+const nuevoElemento = document.createElement('div');
+
+// Asignar contenido al nuevo elemento
+nuevoElemento.textContent = 'Este es un nuevo elemento';
+
+// Añadir el elemento al DOM
+document.body.appendChild(nuevoElemento);
+
+1.2 Eliminación de Elementos
+
+También podemos eliminar elementos del DOM mediante JavaScript.
+
+javascript
+
+const elementoAEliminar = document.getElementById('miElemento'); // Suponiendo que existe un elemento con el id 'miElemento'
+elementoAEliminar.remove();
+
+2. Animaciones Básicas con JavaScript y CSS
+2.1 Transiciones CSS
+
+Las transiciones CSS permiten animar cambios en las propiedades de un elemento.
+
+css
+
+/* Ejemplo de CSS para una transición */
+.elemento {
+  transition: width 1s ease-in-out;
+}
+
+.elemento:hover {
+  width: 200px; /* Cambio que activará la transición */
+}
+
+2.2 Animaciones CSS
+
+Las animaciones CSS son más flexibles y permiten definir múltiples pasos.
+
+css
+
+/* Ejemplo de CSS para una animación */
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.elemento {
+  animation: mover 2s infinite; /* Aplicar la animación */
+}
+
+2.3 Animaciones con JavaScript
+
+También puedes crear animaciones desde JavaScript usando requestAnimationFrame y manipulando propiedades del estilo.
+
+javascript
+
+function moverElemento() {
+  const elemento = document.getElementById('miElemento');
+  let posicion = 0;
+
+  function animar() {
+    if (posicion < 200) {
+      posicion += 2;
+      elemento.style.left = `${posicion}px`;
+      requestAnimationFrame(animar);
+    }
+  }
+
+  animar();
+}
+
+3. Ejercicio Práctico
+3.1 Desafío
+
+Crea un botón que, al hacer clic, agregue un nuevo elemento a la página con un texto y un estilo particular. Luego, al hacer clic en otro botón, elimina ese elemento.
+3.2 Pistas
+
+    Utiliza las funciones createElement, appendChild y remove para manipular el DOM.
+    Aplica estilos CSS a través de las propiedades del elemento (element.style.property).
+
