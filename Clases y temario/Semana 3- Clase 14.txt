@@ -1,0 +1,130 @@
+Día 14: Introducción a ES6+
+
+ECMAScript 6, también conocido como ES6 o ECMAScript 2015, es una versión importante de JavaScript que fue lanzada en 2015. Introdujo una serie de nuevas características y mejoras al lenguaje, lo que lo hizo más poderoso, expresivo y fácil de usar.
+
+Algunas de las características clave introducidas en ECMAScript 6 incluyen:
+
+    let y const: Alternativas a var para declarar variables, que proporcionan un mejor control sobre el alcance y reasignación de valores.
+
+    Plantillas de Cadena (Template Strings): Permiten la interpolación de variables y expresiones dentro de cadenas de texto.
+
+    Desestructuración (Destructuring): Facilita la extracción de valores de objetos y arreglos y su asignación a variables individuales.
+
+    Funciones de Flecha (Arrow Functions): Proporcionan una sintaxis más concisa para definir funciones anónimas.
+
+    Clases: Proporcionan una forma más sencilla de definir objetos y su comportamiento.
+
+    Import/Export de Módulos: Permite dividir el código en módulos reutilizables y facilita la organización de grandes aplicaciones.
+
+    Promesas: Proporciona una forma más limpia de trabajar con operaciones asíncronas.
+
+    Nuevas Colecciones: Introduce nuevos tipos de datos como Set y Map para manipular conjuntos y mapas de manera más eficiente.
+
+Estas son solo algunas de las características más destacadas. ECMAScript 6 marcó un gran avance en la evolución de JavaScript y ha sido ampliamente adoptado en el desarrollo web moderno.
+
+Es importante mencionar que, desde entonces, se han lanzado nuevas versiones de ECMAScript (como ES7, ES8, etc.) que continúan agregando nuevas características y mejoras al lenguaje. Sin embargo, ES6 es considerado un punto de partida esencial para cualquier desarrollador de JavaScript.
+1. Repaso de Características Clave de ECMAScript 6 y Posteriores
+1.1. Let y Const
+1.1.1 let
+
+La declaración let permite crear variables que están limitadas al ámbito del bloque, declaración o expresión en la que se utiliza. Esto soluciona algunos problemas comunes con var, como el hoisting y el alcance en bucles.
+
+javascript
+
+function ejemplo() {
+  for (let i = 0; i < 5; i++) {
+    console.log(i); // i está disponible solo dentro del bucle
+  }
+  
+  console.log(i); // Error: i no está definido en este ámbito
+}
+
+1.1.2 const
+
+const se utiliza para declarar variables cuyo valor no cambiará a lo largo del tiempo. Es importante tener en cuenta que no significa que el valor sea inmutable, sino que la variable no puede ser reasignada.
+
+javascript
+
+const PI = 3.1416;
+PI = 3.14; // Error: no se puede reasignar una constante
+
+1.2. Plantillas de Cadena (Template Strings)
+
+Las plantillas de cadena permiten la interpolación de variables y expresiones dentro de cadenas de texto. Además, facilitan la creación de cadenas de texto multilinea.
+
+javascript
+
+let nombre = 'Juan';
+let edad = 30;
+
+let mensaje = `Hola, soy ${nombre} y tengo ${edad} años.`;
+console.log(mensaje);
+
+1.3. Desestructuración (Destructuring)
+
+La desestructuración permite extraer valores de objetos o arreglos y asignarlos a variables individuales. Esto facilita la manipulación de datos contenidos en estructuras complejas.
+
+javascript
+
+let persona = { nombre: 'María', edad: 25 };
+let { nombre, edad } = persona;
+console.log(nombre); // María
+console.log(edad);   // 25
+
+2. Funciones de Flecha, Clases, Import/Export
+2.1. Funciones de Flecha (Arrow Functions)
+
+Las funciones de flecha proporcionan una forma más concisa de escribir funciones anónimas. No tienen su propio this y heredan el this del contexto en el que fueron creadas.
+
+javascript
+
+const sumar = (a, b) => a + b;
+console.log(sumar(2, 3)); // 5
+
+2.2. Clases
+
+ECMAScript 6 introdujo una forma más sencilla de crear clases en JavaScript. Las clases son una forma de definir cómo se deben crear los objetos.
+
+javascript
+
+class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  saludar() {
+    return `Hola, soy ${this.nombre}.`;
+  }
+}
+
+const juan = new Persona('Juan', 30);
+console.log(juan.saludar()); // Hola, soy Juan.
+
+2.3. Import/Export
+
+El uso de import y export permite dividir el código en módulos reutilizables. Esto es especialmente útil en aplicaciones grandes para organizar y mantener el código.
+
+javascript
+
+// En archivo modulo.js
+export const PI = 3.1416;
+
+// En otro archivo
+import { PI } from './modulo.js';
+console.log(PI); // 3.1416
+
+Ejercicio:
+
+Crea una clase Producto que tenga las siguientes propiedades: nombre, precio y cantidad. Luego, implementa los siguientes métodos:
+
+    calcularTotal(): Este método debe calcular el total del producto multiplicando el precio por la cantidad.
+
+    imprimirDetalle(): Este método debe imprimir un mensaje que muestre el nombre, precio, cantidad y total del producto.
+
+Luego, en otro archivo, importa la clase Producto y crea al menos dos instancias de productos diferentes. Calcula el total y imprime los detalles de cada producto.
+Pistas:
+
+    Utiliza la sintaxis de clases de ECMAScript 6 para crear la clase Producto.
+    Utiliza el operador de desestructuración para asignar los valores de las propiedades al crear una instancia del producto.
+    Utiliza las plantillas de cadena para imprimir los detalles del producto.
