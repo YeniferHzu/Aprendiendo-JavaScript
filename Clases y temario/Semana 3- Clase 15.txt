@@ -1,0 +1,22 @@
+Día 15: Proyecto Final
+Desarrollo de un pequeño proyecto web utilizando todo lo aprendido.
+
+En esta clase, pondremos en práctica todo lo que has aprendido hasta ahora en el curso de JavaScript. Te propongo un proyecto final para que puedas aplicar tus conocimientos y construir una pequeña aplicación web.
+Proyecto: Calculadora Interactiva
+Descripción del Proyecto:
+
+Crea una calculadora interactiva que permita a los usuarios realizar operaciones aritméticas básicas como suma, resta, multiplicación y división.
+Requerimientos:
+
+    Debe haber botones para los dígitos del 0 al 9 y para los operadores (+, -, *, /).
+    Debe haber un botón para borrar la pantalla (C).
+    Debe haber un botón para calcular el resultado (=).
+    La calculadora debe mostrar en tiempo real los números y operaciones seleccionadas por el usuario.
+    Al presionar el botón de igual (=), la calculadora debe mostrar el resultado de la operación.
+    Debe haber un manejo adecuado de errores, por ejemplo, al intentar dividir entre cero.
+
+Pistas:
+
+    Utiliza funciones de eventos (addEventListener) para manejar los clics en los botones.
+    Puedes usar el DOM para manipular los elementos y mostrar los números y operaciones seleccionadas.
+    Utiliza las funciones y conceptos que has aprendido en las clases anteriores para realizar las operaciones.
